@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useDispatch } from "react-redux";
-import { setPlayers } from "../store/playersSlice";
-import { startMatch } from "../store/gameSlice";
+import { setPlayers } from "../../store/playersSlice";
+import { startMatch } from "../../store/gameSlice";
 
 export default function PlayerSetup() {
   const [xName, setXName] = useState("");
@@ -17,7 +17,7 @@ export default function PlayerSetup() {
     if (!canStart) return;
     dispatch(setPlayers({ xName: xName.trim(), oName: oName.trim() }));
     dispatch(startMatch({ startingTurn: "X" }));
-    router.push("/game");
+    router.push("/tic-tac-toe/game");
   };
 
   return (

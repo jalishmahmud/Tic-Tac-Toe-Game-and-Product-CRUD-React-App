@@ -1,5 +1,5 @@
 "use client";
-import ResultPage from "./../../components/ResultPage";
+import ResultPage from "../../../components/tic-tac-toe/ResultPage";
 import React from "react";
 
 export default function ResultRoute() {

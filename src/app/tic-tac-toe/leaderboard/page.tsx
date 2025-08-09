@@ -1,4 +1,4 @@
-import LeaderboardPage from "./../../components/LeaderboardPage";
+import LeaderboardPage from "../../../components/tic-tac-toe/LeaderboardPage";
 import React from "react";
 
 export default function LeaderboardRoute() {

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Board as BoardType } from "../types";
+import { Board as BoardType } from "../../types/tic-tac-toe";
 
 interface Props {
   board: BoardType;
