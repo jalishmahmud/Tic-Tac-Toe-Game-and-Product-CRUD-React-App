@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Providers from "../providers/Providers";
+import Nav from "../components/Nav";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,7 +26,14 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${poppins.variable} antialiased`}
       >
-        {children}
+        <Providers>
+          <div className="min-h-screen p-6 max-w-4xl mx-auto">
+            <header className="mb-6">
+              <Nav />
+            </header>
+            <main>{children}</main>
+          </div>
+        </Providers>
       </body>
     </html>
   );
