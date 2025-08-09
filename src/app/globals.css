@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #3b82f6;
+  --primary: #4580e0;
   --secondary: #10b981;
   --error: #ef4444;
   --warning: #f59e0b;
@@ -68,7 +68,6 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--secondary);
   text-decoration: underline;
   outline: none;
 }

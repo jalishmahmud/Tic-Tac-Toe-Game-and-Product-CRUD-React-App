@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Providers from "../providers/Providers";
-import Nav from "../components/tic-tac-toe/Nav";
+import MainNav from "@/components/common/MainNav";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -12,14 +12,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Tic-Tac-Toe Game and Product CRUD React App",
-  description: "",
+  description: "Assignment 1 and Assignment 2 app",
 };
-
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body
@@ -27,9 +24,9 @@ export default function RootLayout({
         className={`${poppins.variable} antialiased`}
       >
         <Providers>
-          <div className="min-h-screen p-6 max-w-4xl mx-auto">
+          <div className="min-h-screen px-6 py-6 max-w-screen-xl mx-auto">
             <header className="mb-6">
-              <Nav />
+              <MainNav />
             </header>
             <main>{children}</main>
           </div>
