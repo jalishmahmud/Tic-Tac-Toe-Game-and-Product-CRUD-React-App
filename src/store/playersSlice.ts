@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Player } from "../types";
+import { Player } from "../types/tic-tac-toe";
 
 interface PlayersState {
   players: { X: Player; O: Player } | null;

@@ -1,4 +1,4 @@
-import { Board, PlayerId } from "../types";
+import { Board, PlayerId } from "../types/tic-tac-toe";
 
 export const WIN_LINES: number[][] = [
   [0, 1, 2],

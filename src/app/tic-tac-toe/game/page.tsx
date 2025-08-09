@@ -1,5 +1,5 @@
 "use client";
-import GamePage from "./../../components/GamePage";
+import GamePage from "../../../components/tic-tac-toe/GamePage";
 import React from "react";
 
 export default function GameRoute() {

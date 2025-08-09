@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "./../store";
-import { resetMatch, clearPlayers } from "../store/playersSlice";
-import { startMatch } from "../store/gameSlice";
+import { RootState } from "../../store";
+import { resetMatch, clearPlayers } from "../../store/playersSlice";
+import { startMatch } from "../../store/gameSlice";
 import { useRouter } from "next/navigation";
 
 export default function ResultPage() {

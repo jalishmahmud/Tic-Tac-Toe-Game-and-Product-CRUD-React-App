@@ -1,17 +1,17 @@
 "use client";
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "./../store";
+import { RootState } from "../../store";
 import Board from "./Board";
 import {
   playMove,
   setRoundResult,
   nextRound,
   resetRound,
-} from "../store/gameSlice";
-import { checkWinner, isDraw } from "../lib/gameUtils";
-import { addRoundWin, addPoints } from "../store/playersSlice";
-import { addOrUpdate } from "../store/leaderboardSlice";
+} from "../../store/gameSlice";
+import { checkWinner, isDraw } from "../../lib/gameUtils";
+import { addRoundWin, addPoints } from "../../store/playersSlice";
+import { addOrUpdate } from "../../store/leaderboardSlice";
 import { useRouter } from "next/navigation";
 
 export default function GamePage() {
@@ -53,17 +53,17 @@ export default function GamePage() {
     const remaining = 5 - roundNum;
 
     if (xWins > oWins + remaining || oWins > xWins + remaining) {
-      router.push("/result");
+      router.push("/tic-tac-toe/result");
       return;
     }
 
     if (xWins >= 3 || oWins >= 3) {
-      router.push("/result");
+      router.push("/tic-tac-toe/result");
       return;
     }
 
     if (roundNum >= 5) {
-      router.push("/result");
+      router.push("/tic-tac-toe/result");
       return;
     }
 
@@ -111,7 +111,7 @@ export default function GamePage() {
           </div>
           <div className="mt-2 flex gap-2">
             <button
-              onClick={() => router.push("/leaderboard")}
+              onClick={() => router.push("/tic-tac-toe/leaderboard")}
               className="px-3 py-1 rounded border"
             >
               Leaderboard
