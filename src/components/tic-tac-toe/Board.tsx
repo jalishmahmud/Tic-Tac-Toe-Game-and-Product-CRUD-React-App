@@ -10,7 +10,7 @@ interface Props {
 
 export default function Board({ board, onCellClick }: Props) {
   return (
-    <div className="grid grid-cols-3 gap-3">
+    <div className="grid grid-cols-3 w-fit mx-auto border border-gray-400">
       {board.map((cell, i) => (
         <button
           key={i}
