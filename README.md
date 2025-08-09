@@ -7,7 +7,7 @@ A web application built with **Next.js (App Router)** that features two main fun
 
 ## 🚀 Live Demo
 
-[Click here to view the app](https://tic-tac-toe-game-and-product-crud-react-ar713x0d2.vercel.app/)
+[Click here to view the app](https://tic-tac-toe-game-and-product-crud.vercel.app/)
 
 ---
 
